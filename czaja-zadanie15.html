@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 15 – Rozkład ułamka egipskiego na dwa takie same ułamki</title>
+</head>
+<body>
+    <h2>Temat: Rozkład ułamka egipskiego na dwa takie same ułamki egipskie</h2>
+
+    <script>
+        var m_kow = parseInt(prompt("Podaj wartość m:"));
+        var a = 2 * m_kow;
+
+        document.write("<h3>Dane:</h3>");
+        document.write("m = " + m_kow + "<br><br>");
+        document.write("<h3>Rozkład na dwa takie same ułamki egipskie:</h3>");
+        document.write("1/" + m_kow + " = 1/" + a + " + 1/" + a + "<br><br>");
+        document.write("<h3>Sprawdzenie wartości dziesiętnych:</h3>");
+        var suma = (1/a) + (1/a);
+        document.write("1/" + m_kow + " = " + (1/m_kow).toFixed(6) + "<br>");
+        document.write("1/" + a + " + 1/" + a + " = " + suma.toFixed(6));
+    </script>
+</body>
+</html>

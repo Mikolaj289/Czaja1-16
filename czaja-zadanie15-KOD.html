@@ -1,0 +1,42 @@
+<html>
+<body>
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Czaja – Zadanie 15 – KOD</title>
+</head>
+<body>
+    <h2>Kod zadania 15</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Zadanie 15 – Rozkład ułamka egipskiego na dwa takie same ułamki&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Temat: Rozkład ułamka egipskiego na dwa takie same ułamki egipskie&lt;/h2&gt;
+
+    &lt;script&gt;
+        var m_kow = parseInt(prompt("Podaj wartość m:"));
+        var a = 2 * m_kow;
+
+        document.write("&lt;h3&gt;Dane:&lt;/h3&gt;");
+        document.write("m = " + m_kow + "&lt;br&gt;&lt;br&gt;");
+        document.write("&lt;h3&gt;Rozkład na dwa takie same ułamki egipskie:&lt;/h3&gt;");
+        document.write("1/" + m_kow + " = 1/" + a + " + 1/" + a + "&lt;br&gt;&lt;br&gt;");
+        document.write("&lt;h3&gt;Sprawdzenie wartości dziesiętnych:&lt;/h3&gt;");
+        var suma = (1/a) + (1/a);
+        document.write("1/" + m_kow + " = " + (1/m_kow).toFixed(6) + "&lt;br&gt;");
+        document.write("1/" + a + " + 1/" + a + " = " + suma.toFixed(6));
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</body>
+</html>
+</textarea>
+</body>
+</html>

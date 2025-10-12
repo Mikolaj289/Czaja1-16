@@ -1,0 +1,42 @@
+<html>
+<body>
+<textarea cols="90" rows="24">
+<html>
+<head>
+<title>Mikołaj Czaja 3F - Zadanie 12</title>
+<script language="JavaScript">
+function oblicz_sekundy_cza() {
+    var D1_cza = prompt("Podaj pierwszy dzień stycznia (D1):", "");
+    var G1_cza = prompt("Podaj godzinę dla pierwszego dnia (G1):", "");
+    var D2_cza = prompt("Podaj drugi dzień stycznia (D2):", "");
+    var G2_cza = prompt("Podaj godzinę dla drugiego dnia (G2):", "");
+
+    var D1 = parseFloat(D1_cza);
+    var D2 = parseFloat(D2_cza);
+    var G1 = parseFloat(G1_cza);
+    var G2 = parseFloat(G2_cza);
+
+    var sekundy = ((D1 - D2) * 24 * 60 * 60) + ((G1 - G2) * 60 * 60);
+    var wielkosc = 38;
+
+    document.write("<div style='color:green; font-size:" + wielkosc + "px;'>");
+    document.write("Ilość sekund między dniem " + D1 + " godz. " + G1 + " a dniem " + D2 + " godz. " + G2 + " wynosi: " + sekundy + " sekund<br>");
+    document.write("</div>");
+}
+function okno_zamknij_cza() {
+    window.close();
+}
+</script>
+</head>
+<body>
+<div style="text-align:center;">
+    <h2 style="color:red;">Zadanie 12 - Mikołaj Czaja 3F</h2>
+    <input type="button" value="Oblicz ilość sekund" onclick="oblicz_sekundy_cza()">
+    <br><br>
+    <input type="button" value="Zamknij okno" onclick="okno_zamknij_cza()">
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>

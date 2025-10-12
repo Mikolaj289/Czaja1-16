@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 16</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: navy;
+        }
+        .full-width {
+            display: block;
+            width: 100%;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Zadanie 16 - Sterowanie wydrukami</h1>
+
+<script>
+let A = parseInt(prompt("Podaj pierwszą liczbę:"));
+let B = parseInt(prompt("Podaj drugą liczbę:"));
+
+let A3 = A**3;
+let B3 = B**3;
+let term2 = 3 * (A**2) * B;
+let term3 = 3 * A * (B**2);
+let wynik = A3 + term2 + term3 + B3;
+
+document.write("<p>Wczytane liczby: A = " + A + ", B = " + B + "</p>");
+document.write("<p class='full-width'>(" + A + " + " + B + ")^3 = " + 
+               A + "^3 + 3*(" + A + ")^2*(" + B + ") + 3*(" + A + ")*(" + B + ")^2 + " + B + "^3 = " +
+               A3 + " + " + term2 + " + " + term3 + " + " + B3 + " = " + wynik + "</p>");
+</script>
+
+</body>
+</html>

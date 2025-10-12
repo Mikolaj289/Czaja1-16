@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 13 – Rozkład ułamka egipskiego</title>
+</head>
+<body>
+    <h2>Temat: Rozkład ułamka egipskiego na dwa ułamki egipskie</h2>
+    <p>Program oblicza rozkład ułamka postaci 1/m na dwa ułamki egipskie według wzoru:<br>
+    1/m = 1/(m+1) + 1/(m*(m+1))</p>
+
+    <script>
+        var m_kow = parseInt(prompt("Podaj wartość m:"));
+        var pierwsza_czesc = 1 / (m_kow + 1);
+        var druga_czesc = 1 / (m_kow * (m_kow + 1));
+
+        document.write("<h3>Dane:</h3>");
+        document.write("m = " + m_kow + "<br><br>");
+        document.write("<h3>Rozkład ułamka egipskiego:</h3>");
+        document.write("1/" + m_kow + " = 1/" + (m_kow + 1) + " + 1/" + (m_kow * (m_kow + 1)) + "<br><br>");
+        document.write("<h3>Sprawdzenie wartości dziesiętnych:</h3>");
+        document.write("1/" + m_kow + " = " + (1/m_kow).toFixed(6) + "<br>");
+        document.write("1/" + (m_kow + 1) + " + 1/" + (m_kow * (m_kow + 1)) + " = " + (pierwsza_czesc + druga_czesc).toFixed(6));
+    </script>
+</body>
+</html>

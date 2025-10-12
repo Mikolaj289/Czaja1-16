@@ -1,0 +1,35 @@
+<html>
+<body>
+<textarea cols="90" rows="24">
+<html>
+<head>
+<title>Mikołaj Czaja 3F - Zadanie 11</title>
+<script language="JavaScript">
+function oblicz_sekundy_cza() {
+    var D1_cza = prompt("Podaj pierwszy dzień stycznia (D1):", "");
+    var D2_cza = prompt("Podaj drugi dzień stycznia (D2):", "");
+    var a = parseFloat(D1_cza);
+    var b = parseFloat(D2_cza);
+    var sekundy = (a - b) * 24 * 60 * 60;
+    var wielkosc = 30 + 8;
+    document.write("<div style='color:green; font-size:" + wielkosc + "px;'>");
+    document.write("Ilość sekund między dniami " + a + " i " + b + " wynosi: " + sekundy + " sekund<br>");
+    document.write("</div>");
+}
+function okno_zamknij_cza() {
+    window.close();
+}
+</script>
+</head>
+<body>
+<div style="text-align:center;">
+    <h2 style="color:red;">Zadanie 11 - Mikołaj Czaja 3F</h2>
+    <input type="button" value="Oblicz ilość sekund" onclick="oblicz_sekundy_cza()">
+    <br><br>
+    <input type="button" value="Zamknij okno" onclick="okno_zamknij_cza()">
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>

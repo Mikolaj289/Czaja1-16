@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 9 - Prompt Box</title>
+    <script type="text/javascript">
+        function show_prompt() {
+            var name = prompt("Napisz imię", "Mikołaj Czaja");
+            if (name != null && name != "") {
+                document.write("Witaj " + name + "! Jak się masz?");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Zadanie 9 - Prompt Box</h2>
+    <p>Wciśnij przycisk, aby zobaczyć Prompt Box:</p>
+    <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+
+    <hr>
+    <h3>Teoria:</h3>
+    <p>
+        Prompt Box to okienko, które pozwala użytkownikowi wpisać jakąś wartość, np. swoje imię czy hasło. 
+        Po wpisaniu tekstu użytkownik może kliknąć <strong>OK</strong> lub <strong>Cancel</strong>. 
+        Jeśli kliknie OK, funkcja zwraca wpisaną wartość, a jeśli Cancel – zwraca <strong>null</strong>. 
+        Dzięki temu możemy pobrać dane od użytkownika i wykorzystać je w dalszej części strony.
+    </p>
+</body>
+</html>
